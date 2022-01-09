@@ -19,6 +19,11 @@ h2 {
     margin-right: 5%;
 }
 
+hr {
+    width: 90%;
+    margin-left: 0px;
+}
+
 @media (max-width: 420px) {
 
     h1, h2{
@@ -28,5 +33,12 @@ h2 {
 
     a {
         font-size: 16px;
+    }
+}
+
+@media (min-width: 530px) {
+    body {
+        position: relative;
+        left: 5%;
     }
 }
