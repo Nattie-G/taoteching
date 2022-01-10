@@ -1,3 +1,4 @@
+/* base styles */
 body {
     font-size: 20px;
     margin-left: auto;
@@ -23,7 +24,7 @@ hr {
     width: 90%;
     margin-left: 0px;
 }
-
+/* mobile styles */
 @media (max-width: 420px) {
 
     h1, h2{
@@ -35,10 +36,16 @@ hr {
         font-size: 16px;
     }
 }
-
-@media (min-width: 530px) {
+/* half screen styles */
+@media (min-width: 530px) and (max-width: 629px) {
     body {
-        position: relative;
-        left: 5%;
+        padding-left: calc(20px + 5%);
+    }
+}
+
+/* full size screen styles */
+@media (min-width: 630px) {
+    body {
+        padding-left: calc(20px + 10%);
     }
 }
